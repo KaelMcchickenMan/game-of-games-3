@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://chn6votsxxywq"]
+
+[ext_resource type="Texture2D" uid="uid://dkgkcwxxdd0u6" path="res://Assets/Pickleman.png" id="1_216t0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kh326"]
+atlas = ExtResource("1_216t0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcnta"]
+atlas = ExtResource("1_216t0")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1bsq"]
+atlas = ExtResource("1_216t0")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0uxcp"]
+atlas = ExtResource("1_216t0")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fy88r"]
+atlas = ExtResource("1_216t0")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x88qq"]
+atlas = ExtResource("1_216t0")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u44tx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kh326")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcnta")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1bsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0uxcp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fy88r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x88qq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Pickleman" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_u44tx")
+frame = 4
+frame_progress = 0.827639
